@@ -979,7 +979,6 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     PowerOffAlarm \
-    PerformanceMode \
     QtiTelephonyService \
     workloadclassifier \
     WfdService \

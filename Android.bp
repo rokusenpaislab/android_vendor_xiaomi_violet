@@ -170,3 +170,20 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "libantradio",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libantradio.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libantradio.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
